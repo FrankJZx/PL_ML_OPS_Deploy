@@ -190,8 +190,7 @@ def UserForGenre2(genero: str):
 @app.get("/Best_developer")
 def best_developer_year( año : int ):
     """
-    Funcion que devuelve el top 3 de desarrolladoras con juegos MENOS 
-    recomendados por usuarios para el año dado.
+    Funcion que devuelve el top 3 de desarrolladoras MAS recomendada para el año dado.
     """
     df_año2 = df_best_developer[df_best_developer["anio"]== año]
     if type(año) != int:
